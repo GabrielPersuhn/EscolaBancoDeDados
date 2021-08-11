@@ -1,7 +1,8 @@
 package br.com.letscode.java.sistemaEscola.controller;
 
-import br.com.letscode.entity.Professor;
-import br.com.letscode.repository.ProfessorRepository;
+
+import br.com.letscode.java.sistemaEscola.entity.Professor;
+import br.com.letscode.java.sistemaEscola.repository.ProfessorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
