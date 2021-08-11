@@ -16,21 +16,18 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "cursoDisciplina")
+@Table(name = "curso_disciplina")
 public class CursoDisciplinaProfessor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @ManyToOne
-    @JoinColumn(name = "codigoCurso", referencedColumnName = "codigoCurso")
-    @Getter
-    @Setter
-    Curso codigoCurso;
+    @ManyToOne @JoinColumn(name = "codigo_curso", referencedColumnName = "codigo_curso")
+    @Getter @Setter Curso codigoCurso;
 
-    @ManyToOne @JoinColumn(name = "codigoDisciplina", referencedColumnName = "codigoDisciplina")
-    @Getter @Setter Disciplina codigoDisciplina;
+    @ManyToOne @JoinColumn(name = "codigo_disciplina", referencedColumnName = "codigo_disciplina")
+    @Getter @Setter Disciplina codigoDisiciplina;
 
-    @ManyToOne @JoinColumn(name = "registroProfessor", referencedColumnName = "registroProfessor")
+    @ManyToOne @JoinColumn(name = "registro_professor", referencedColumnName = "registro_professor")
     @Getter @Setter Professor registroProfessor;
 }

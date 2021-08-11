@@ -16,17 +16,15 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "telefoneProfessor")
+@Table(name = "telefone_professor")
 public class TelefoneProfessor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Getter
-    @Setter
-    int numero;
+    @Getter @Setter int numero;
 
     @ManyToOne
-    @JoinColumn(name = "registroProfessor", referencedColumnName = "registroProfessor")
+    @JoinColumn(name = "registro_professor", referencedColumnName = "registro_professor")
     @Getter @Setter Professor registroProfessor;
 }
