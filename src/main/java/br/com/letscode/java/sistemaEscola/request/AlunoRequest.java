@@ -1,7 +1,5 @@
 package br.com.letscode.java.sistemaEscola.request;
 
-
-
 import br.com.letscode.java.sistemaEscola.entity.Aluno;
 import br.com.letscode.java.sistemaEscola.entity.Curso;
 import br.com.letscode.java.sistemaEscola.repository.CursoRepository;
@@ -10,7 +8,6 @@ import lombok.Setter;
 
 import java.sql.Date;
 import java.util.Optional;
-
 
 public class AlunoRequest {
     @Getter @Setter private int ra;

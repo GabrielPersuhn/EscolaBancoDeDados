@@ -1,6 +1,5 @@
 package br.com.letscode.java.sistemaEscola.controller;
 
-
 import br.com.letscode.java.sistemaEscola.entity.TelefoneProfessor;
 import br.com.letscode.java.sistemaEscola.repository.TelefoneProfessorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +13,6 @@ public class TelefoneProfessorController {
 
     @RequestMapping("/telefonesProfessor")
     public Iterable<TelefoneProfessor> buscaTelefoneProfessor(){
-
-        Iterable<TelefoneProfessor> telefoneProfessor = telefoneProfessorRepository.findAll();
-        return  telefoneProfessor;
+        return telefoneProfessorRepository.findAll();
     }
 }

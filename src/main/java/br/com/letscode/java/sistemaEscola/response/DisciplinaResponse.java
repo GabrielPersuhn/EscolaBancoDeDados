@@ -1,6 +1,5 @@
 package br.com.letscode.java.sistemaEscola.response;
 
-
 import br.com.letscode.java.sistemaEscola.entity.Disciplina;
 import lombok.Getter;
 
@@ -9,10 +8,10 @@ import java.util.stream.Collectors;
 
 public class DisciplinaResponse {
     @Getter
-    private int codigoDisciplina;
-    @Getter private String nomeDisciplina;
-    @Getter private int cargaPratica;
-    @Getter private int cargaTeorica;
+    private final int codigoDisciplina;
+    @Getter private final String nomeDisciplina;
+    @Getter private final int cargaPratica;
+    @Getter private final int cargaTeorica;
 
     public  DisciplinaResponse(Disciplina disciplina){
         this.codigoDisciplina = disciplina.getCodigoDisciplina();

@@ -1,6 +1,5 @@
 package br.com.letscode.java.sistemaEscola.response;
 
-
 import br.com.letscode.java.sistemaEscola.entity.Aluno;
 import br.com.letscode.java.sistemaEscola.entity.Curso;
 import lombok.Getter;
@@ -11,11 +10,11 @@ import java.util.stream.Collectors;
 
 
 public class AlunoResponse {
-    @Getter private int ra;
-    @Getter private String nome;
-    @Getter private String sobrenome;
-    @Getter private Date dataNascimento;
-    @Getter private Curso codigoCurso;
+    @Getter private final int ra;
+    @Getter private final String nome;
+    @Getter private final String sobrenome;
+    @Getter private final Date dataNascimento;
+    @Getter private final Curso codigoCurso;
 
     public AlunoResponse(Aluno aluno){
         this.ra = aluno.getRa();

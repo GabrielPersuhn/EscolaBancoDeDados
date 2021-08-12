@@ -2,7 +2,7 @@ package br.com.letscode.java.sistemaEscola.repository;
 
 
 import br.com.letscode.java.sistemaEscola.entity.Disciplina;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface DisciplinaRepository extends CrudRepository<Disciplina, Integer> {
+public interface DisciplinaRepository extends JpaRepository<Disciplina, Integer> {
 }

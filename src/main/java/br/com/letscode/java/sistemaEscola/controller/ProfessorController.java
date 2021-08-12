@@ -1,6 +1,5 @@
 package br.com.letscode.java.sistemaEscola.controller;
 
-
 import br.com.letscode.java.sistemaEscola.entity.Professor;
 import br.com.letscode.java.sistemaEscola.repository.ProfessorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,6 @@ public class ProfessorController {
 
     @RequestMapping("/professores")
     public Iterable<Professor> buscarProfessores(){
-        Iterable<Professor> professores = professorRepository.findAll();
-        return professores;
+        return professorRepository.findAll();
     }
 }

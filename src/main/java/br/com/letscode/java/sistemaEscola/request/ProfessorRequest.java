@@ -1,6 +1,5 @@
 package br.com.letscode.java.sistemaEscola.request;
 
-
 import br.com.letscode.java.sistemaEscola.entity.Professor;
 import lombok.Getter;
 import lombok.Setter;

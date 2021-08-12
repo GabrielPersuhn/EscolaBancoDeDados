@@ -1,6 +1,5 @@
 package br.com.letscode.java.sistemaEscola.controller;
 
-
 import br.com.letscode.java.sistemaEscola.entity.Disciplina;
 import br.com.letscode.java.sistemaEscola.repository.DisciplinaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,6 @@ public class DisciplinaController {
 
     @RequestMapping("/disciplinas")
     public Iterable<Disciplina> buscarDisciplinas(){
-        Iterable<Disciplina> disciplinas = disciplinaRepository.findAll();
-        return disciplinas;
+        return disciplinaRepository.findAll();
     }
 }
